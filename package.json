@@ -8,6 +8,7 @@
     "build": "webpack --config webpack.prod.js",
     "test": "karma start",
     "e2e": "codeceptjs run --steps",
+    "bundle-report": "webpack-bundle-analyzer --port 4200 dist/stats.json",
     "build-image": "node sharp.js"
   },
   "keywords": [],
