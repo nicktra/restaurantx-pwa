@@ -1,0 +1,105 @@
+@media screen and (min-width: 650px) {
+    nav .burger {
+        display: none;
+    }
+
+    nav ul {
+        transform: translate(0,0);
+        height: auto;
+        padding: unset;
+        position: relative;
+        background-color: unset;
+        margin: 15px 0;
+        transition: unset;
+    }
+    nav ul li {
+        display: inline-block;
+        margin: unset;
+    }
+    
+    .restos {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .resto {
+        grid-template-columns: auto 1fr;
+    }
+
+    .resto .resto__title {
+        margin: 10px 0 0 0;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .resto .resto__overview {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .resto h3 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        margin: 0 auto;
+    }
+
+    .detail-menu {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 5;
+        grid-row-end: 6;
+    }
+
+    .detail-review {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 7;
+    }
+    
+    .title-review {
+        grid-row-start: 6;
+    }
+
+    .grid-2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1.245em;
+    }
+
+    .hero {
+        background:linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url("/images/heros/hero-image_5-large.jpg");
+        min-height: 350px;
+        width: 100%;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        background-position: center;
+    }
+}
+
+@media screen and (min-width: 850px) {
+    .restos {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .hero {
+        background:linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url("/images/heros/hero-image_5.jpg");
+        min-height: 350px;
+        width: 100%;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        background-position: center;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .restos {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
